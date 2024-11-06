@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import streamlit as st
 
-prototxt_path = r"C:\Users\ArnettaNT\Documents\thonny latihan\deploy.prototxt"
-caffemodel_path = r"C:\Users\ArnettaNT\Documents\thonny latihan\res10_300x300_ssd_iter_140000.caffemodel"
+prototxt_path = "deploy.prototxt"
+caffemodel_path = "res10_300x300_ssd_iter_140000.caffemodel"
 net = cv2.dnn.readNetFromCaffe(prototxt_path, caffemodel_path)
 
 def detect_and_count_faces_dnn(image):
